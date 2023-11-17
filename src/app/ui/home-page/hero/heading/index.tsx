@@ -2,12 +2,12 @@ import React from 'react';
 
 function Heading() {
   return (
-    <h1 className='text-white lg:text-85 lg:first-letter:leading-[98px] font-bold text-center text-[42px] leading-[50px] md:text-[55px]'>
+    <h1 className='text-white lg:text-85 lg:first-letter:leading-[98px] font-semibold text-center text-[42px] leading-[50px] md:text-[55px]'>
       Create stunning visuals
       <br />
       <span>
         <svg
-          className='lg:w-[45rem] w-[25rem] md:w-[35rem] mx-auto '
+          className='lg:w-[45rem] w-[25rem] md:w-[35rem] mx-auto'
           viewBox='0 0 72 12'
           xmlns='http://www.w3.org/2000/svg'
         >

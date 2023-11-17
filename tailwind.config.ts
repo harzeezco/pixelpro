@@ -9,10 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        85: '85px',
+        85: '80px',
       },
       backgroundColor: {
         'gray-100': '#2e2e2e',
+        'gray-200': '#FFFFFF0D',
         body: '#101112',
         'blue-700': '#0058FF',
       },
