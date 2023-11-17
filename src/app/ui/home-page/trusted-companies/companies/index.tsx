@@ -57,7 +57,10 @@ function Companies() {
   return (
     <ul className='slides items-center gap-6 lg:flex'>
       {COMPANIES.map((details) => (
-        <li key={details.id} className='hover:scale-105 transition-all ease-in cursor-pointer'>
+        <li
+          key={details.id}
+          className='hover:scale-105 transition-all ease-in cursor-pointer'
+        >
           <Image
             src={`/png/companies/${details.img}`}
             alt={details.alt}

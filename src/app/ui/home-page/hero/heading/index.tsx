@@ -30,7 +30,7 @@ function Heading() {
             x='50%'
             y='9'
             textAnchor='middle'
-            fontFamily='consolas'
+            fontFamily='inherit'
             fontSize='10'
             fill='url(#G)'
           >
