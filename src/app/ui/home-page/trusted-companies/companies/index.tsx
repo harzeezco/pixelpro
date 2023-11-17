@@ -59,7 +59,7 @@ function Companies() {
       {COMPANIES.map((details) => (
         <li
           key={details.id}
-          className='hover:scale-105 transition-all ease-in cursor-pointer'
+          className='cursor-pointer'
         >
           <Image
             src={`/png/companies/${details.img}`}
