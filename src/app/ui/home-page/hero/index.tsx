@@ -8,7 +8,7 @@ import Heading from './heading';
 
 function Hero() {
   return (
-    <section className='relative hero'>
+    <section className='relative' id='hero'>
       <Container classNames='flex-col items-center mt-14 pb-20'>
         <Heading />
         <Features />

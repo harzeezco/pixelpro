@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrap {
+  text-align: center;
+  color: transparent;
+  animation: animation 1.7s linear infinite;
+  background: radial-gradient(circle, #ac2ef8 0%, #ff5993 100%);
+  background-size: 200%;
+  background-clip: text;
+}
+
+.wrap-head {
+  text-align: center;
+  color: transparent;
+  animation: animation 1.7s linear infinite;
+  background: radial-gradient(circle, #ffa500 0%, #ff5993 100%);
+  background-size: 200%;
+  background-clip: text;
+}
+
+@keyframes animation {
+  to {
+    background-position: 200% center;
+  }
+}

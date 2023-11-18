@@ -11,6 +11,9 @@ const config: Config = {
       fontSize: {
         85: '80px',
       },
+      colors: {
+        'gray-500': '#C3C3C3',
+      },
       backgroundColor: {
         'gray-100': '#2e2e2e',
         'gray-200': '#FFFFFF0D',
