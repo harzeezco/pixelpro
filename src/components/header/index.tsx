@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Container from '../container';
+import Container from '../shared/container';
 import Nav from './nav';
-import Button from '../button';
+import Button from '../shared/button';
 
 function Header() {
   return (
     <header>
-      <Container classNames='justify-between items-center px-6 h-[96px]'>
+      <Container classNames='justify-between items-center px-6 h-[96px] flex'>
         <Link href='/'>
           <Image src='/svg/logo.svg' width={132} height={32} alt='logo' />
         </Link>

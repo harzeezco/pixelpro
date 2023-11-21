@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
-import Container from '@/components/container';
+import Container from '@/components/shared/container';
 import './index.css';
 import Heading from './heading';
 import Features from './features';
-import Button from '../../button';
+import Button from '../../shared/button';
 
 function Hero() {
   return (
     <section className='relative' id='hero'>
-      <Container classNames='flex-col items-center mt-14 pb-20'>
+      <Container classNames='mt-14 pb-20 text-center'>
         <Heading />
         <Features />
         <Button variant='blue'>Try For Free</Button>

@@ -25,3 +25,34 @@
     background-position: 200% center;
   }
 }
+
+.bg-blue-gradient {
+  @apply bg-gradient-to-r from-blue-500 via-blue-500 to-blue-700 bg-clip-text text-transparent;
+}
+
+.bg-purple-gradient {
+  @apply bg-gradient-to-r from-[#722FFF] via-[#722FFF] to-[#B12EFF] bg-clip-text text-transparent;
+}
+
+.bg-pink-gradient {
+  @apply bg-gradient-to-r from-[#FFCB01] via-[#FF5993] to-[#FF5993] bg-clip-text text-transparent;
+}
+
+.testimonial {
+  /* background: linear-gradient(to top left, #ff5993 70%, #b12eff 30%); */
+  background-image: linear-gradient(to top left, #ff5993 5%, #b12eff 100%);
+}
+
+/* @layer components {
+  .bg-blue-gradient {
+    @apply bg-gradient-to-r from-blue-500 via-blue-500 to-blue-700 bg-clip-text text-transparent;
+  }
+
+  .bg-purple-gradient {
+    @apply bg-gradient-to-r from-[#722FFF] via-[#722FFF] to-[#B12EFF] bg-clip-text text-transparent;
+  }
+
+  .bg-pink-gradient {
+    @apply bg-gradient-to-r from-[#FFCB01] via-[#FF5993] to-[#FF5993] bg-clip-text text-transparent;
+  }
+} */

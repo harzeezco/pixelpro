@@ -10,7 +10,7 @@ function Container({
 }) {
   return (
     <div
-      className={mergeClasses('max-w-container-width mx-auto flex', classNames)}
+      className={mergeClasses('max-w-container-width mx-auto px-6', classNames)}
     >
       {children}
     </div>

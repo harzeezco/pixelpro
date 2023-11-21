@@ -27,6 +27,32 @@ export type CommonProp = {
 
 export type CompaniesProp = CommonProp[];
 
-export type PopupDetailsProp = {
+export type PopupDetailsProp = CommonProp & {
   title: string;
+};
+
+export type FeatureDataProps = {
+  headingWithGradient: string;
+  headingWithTransparent: string;
+  img: string;
+  paragraphs: string;
+  href: string;
+  className: string;
+};
+
+export type FeatureProps = { layoutType: 'default' | 'reverse' } & {
+  details: FeatureDataProps;
+};
+
+type CommonProps = {
+  img: string;
+  alt: string;
+  title: string;
+  label: string;
+};
+
+export type HowItWorkProps = { id: number } & CommonProps;
+
+export type HowItWorkDetailsProps = {
+  details: CommonProps;
 };

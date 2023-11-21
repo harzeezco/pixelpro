@@ -1,7 +1,8 @@
 import {
-  CommonProp,
   CompaniesProp,
+  FeatureDataProps,
   FooterNavLinksProp,
+  HowItWorkProps,
   NavLinksProp,
   PopupDetailsProp,
 } from './types';
@@ -123,7 +124,7 @@ export const FOOTER_LINKS: FooterNavLinksProp = [
   },
 ];
 
-export const POPUPDETAILS: (PopupDetailsProp | CommonProp)[] = [
+export const POPUPDETAILS: PopupDetailsProp[] = [
   {
     id: 0,
     img: 'first.png',
@@ -159,48 +160,113 @@ export const COMPANIES: CompaniesProp = [
     id: 0,
     img: 'adobe.png',
     href: 'https://www.adobe.com/',
-    alt: 'adobe logo',
+    alt: 'Adobe',
   },
   {
     id: 1,
     img: 'amazon.png',
     href: 'https://www.microsoft.com/',
-    alt: 'amazon logo',
+    alt: 'Amazon',
   },
   {
     id: 2,
     img: 'shopify.png',
     href: 'https://www.shopify.com/',
-    alt: 'shopify logo',
+    alt: 'Shopify',
   },
   {
     id: 3,
     img: 'shopee.png',
     href: 'https://shopee.com/',
-    alt: 'shopee logo',
+    alt: 'Shopee',
   },
   {
     id: 4,
     img: 'instagram.png',
     href: 'https://www.instagram.com/',
-    alt: 'instagram logo',
+    alt: 'Instagram',
   },
   {
     id: 5,
     img: 'figma.png',
     href: 'https://www.figma.com/',
-    alt: 'figma logo',
+    alt: 'Figma',
   },
   {
     id: 6,
     img: 'adobe.png',
     href: 'https://www.adobe.com/',
-    alt: 'adobe logo',
+    alt: 'Adobe',
   },
   {
     id: 7,
     img: 'adobe.png',
     href: 'https://www.adobe.com/',
-    alt: 'adobe logo',
+    alt: 'Adobe',
+  },
+];
+
+export const FEATURE_DATA: FeatureDataProps[] = [
+  {
+    headingWithGradient: 'Erase any',
+    headingWithTransparent: 'background',
+    img: 'capman.png',
+    paragraphs:
+      "Edit photos quickly and accurately without all the effort. PhotoRoom makes it easy to keep the focus on the foreground, plus it's 2x more accurate than other apps.",
+    href: '',
+    className: 'bg-blue-gradient',
+  },
+  {
+    headingWithGradient: 'Remove objects',
+    headingWithTransparent: 'with a swipe',
+    img: 'product.png',
+    paragraphs:
+      'Instantly remove unwanted objects and defects. With just a swipe of your fingertip, you can make sure your snapshots are flawless.',
+    href: '',
+    className: 'bg-purple-gradient',
+  },
+  {
+    headingWithGradient: 'Relight',
+    headingWithTransparent: 'your photographs',
+    img: 'selfie.png',
+    paragraphs:
+      'Relight your images with beautiful lights. Instantly light unwanted objects. With just a swipe of your point, you can make sure your snapshots are flawless.',
+    href: '',
+    className: 'bg-pink-gradient',
+  },
+];
+
+export const HOWITWORK_DATA: HowItWorkProps[] = [
+  {
+    id: 0,
+    img: 'burble.png',
+    alt: 'burble',
+    title: 'Eliminate acne, wrinkles on the Face',
+    label:
+      'A picture when you have facial wrinkles, red pimples, or other skin flaws.',
+  },
+  {
+    id: 1,
+    img: 'vide.png',
+    alt: 'video',
+    title: 'Fix old photos',
+    label:
+      'Simply choose the problematic areas on the photo to remove blemishes, stains, and rips.',
+  },
+  {
+    id: 2,
+    img: 'tools.png',
+    alt: 'tools',
+    title: 'Eliminate acne, wrinkles on the Face',
+    label:
+      'A totally free AI photo altering tool is called PixelPro. Simple to use, quick photo editing. Be happy',
+  },
+  {
+    id: 3,
+    img: 'shape.png',
+    alt: 'shape',
+    title: 'Eliminate acne, wrinkles on the Face',
+    label:
+      'Use PixelPro on your smartphone or web browser to edit images anywhere.',
   },
 ];
