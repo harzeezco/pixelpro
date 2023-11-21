@@ -3,7 +3,7 @@ import React from 'react';
 
 function TestimonialDetails() {
   return (
-    <article className='rounded-[20px] grid grid-rows-[auto_1fr_auto] gap-5 bg-white  p-5 text-black'>
+    <article className='grid grid-rows-[auto_1fr_auto] gap-5 rounded-[20px] bg-white  p-5 text-black'>
       <Image
         src='/png/testimonial/iceberg.png'
         alt=''

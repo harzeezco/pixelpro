@@ -2,7 +2,7 @@ import React from 'react';
 
 function Heading() {
   return (
-    <h1 className='text-white lg:text-85 lg:leading-[98px] font-semibold text-center text-[42px] leading-[50px] md:text-[55px]'>
+    <h1 className='text-center text-[42px] font-semibold leading-[50px] text-white md:text-[55px] lg:text-85 lg:leading-[98px]'>
       Create stunning visuals
       <br />
       <span className='wrap-head'>in seconds</span>

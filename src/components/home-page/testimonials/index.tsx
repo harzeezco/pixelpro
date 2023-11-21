@@ -6,14 +6,14 @@ function Testimonials() {
   return (
     <section className='testimonial py-16'>
       <div className='px-7'>
-        <div className='flex items-center justify-around mb-10'>
+        <div className='mb-10 flex items-center justify-around'>
           <h1 className='text-7xl font-semibold'>
             <span className='text-yellow-500'>People love</span> PixelPro
           </h1>
           <div className='ml-10 flex items-center gap-4'>
             <button
               type='button'
-              className='rounded-full bg-white h-[38px] w-[38px] flex items-center justify-center'
+              className='flex h-[38px] w-[38px] items-center justify-center rounded-full bg-white'
             >
               <Image
                 src='/svg/arrow-right.svg'
@@ -24,7 +24,7 @@ function Testimonials() {
             </button>
             <button
               type='button'
-              className='rounded-full bg-white h-[38px] w-[38px] flex items-center justify-center'
+              className='flex h-[38px] w-[38px] items-center justify-center rounded-full bg-white'
             >
               <Image
                 src='/svg/arrow-left.svg'

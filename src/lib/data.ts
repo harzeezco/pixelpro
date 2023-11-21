@@ -1,4 +1,5 @@
 import {
+  BlogProps,
   CompaniesProp,
   FeatureDataProps,
   FooterNavLinksProp,
@@ -268,5 +269,24 @@ export const HOWITWORK_DATA: HowItWorkProps[] = [
     title: 'Eliminate acne, wrinkles on the Face',
     label:
       'Use PixelPro on your smartphone or web browser to edit images anywhere.',
+  },
+];
+
+export const BLOG_DATA: BlogProps[] = [
+  {
+    id: 0,
+    img: 'chair.png',
+    title: '10 Effective Strategies to Remove Background from Images',
+    text: 'High-quality pictures are not enough, but editing them is also essential for taking good pictures, lighting, angles, and many factors impact.',
+    profileImg: 'hasan.png',
+    profileName: 'Moinul Hasan',
+  },
+  {
+    id: 1,
+    img: 'home-decoration.png',
+    title: '7 Powerful Strategies to Build Stronger Relationships',
+    text: 'A passport is an essential travel document confirming identity and citizenship. A passport photo with a plain background is required to ensure that the photo.',
+    profileImg: 'sverku.png',
+    profileName: 'Ksenia Sverku',
   },
 ];

@@ -11,7 +11,7 @@ function Button({ children = null, variant = 'blue' }: ButtonProp) {
       return (
         <button
           type='button'
-          className='rounded-[18px] py-2 px-[18px] bg-inherit hover:bg-white transition-pop-up hover:text-black border-[1.5px] border-white border-solid'
+          className='rounded-[18px] border-[1.5px] border-solid border-white bg-inherit px-[18px] py-2 transition-pop-up hover:bg-white hover:text-black'
         >
           {children}
         </button>
@@ -20,7 +20,7 @@ function Button({ children = null, variant = 'blue' }: ButtonProp) {
       return (
         <button
           type='button'
-          className='rounded-[18px] py-2 px-[18px] bg-white transition-pop-up text-black border-[1.5px]'
+          className='rounded-[18px] border-[1.5px] bg-white px-[18px] py-2 text-black transition-pop-up'
         >
           {children}
         </button>
@@ -29,7 +29,7 @@ function Button({ children = null, variant = 'blue' }: ButtonProp) {
       return (
         <button
           type='button'
-          className='rounded-[25px] py-3 px-[30px] bg-blue-700 transition-pop-up text-white border-none font-semibold w-auto'
+          className='w-auto rounded-[25px] border-none bg-blue-700 px-[30px] py-3 font-semibold text-white transition-pop-up'
         >
           {children}
         </button>

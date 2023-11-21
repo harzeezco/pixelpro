@@ -18,9 +18,9 @@ const FEATURES = [
 
 function Features() {
   return (
-    <ul className='flex items-center gap-x-7 justify-center mt-2 mb-8 flex-wrap gap-y-4'>
+    <ul className='mb-8 mt-2 flex flex-wrap items-center justify-center gap-x-7 gap-y-4'>
       {FEATURES.map((feature) => (
-        <li key={feature.id} className='flex gap-x-3 items-center'>
+        <li key={feature.id} className='flex items-center gap-x-3'>
           <Image
             src='/svg/verified.svg'
             width={20}

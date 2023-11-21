@@ -1,5 +1,9 @@
 export type NavLinksProp = NavDetailsProp[];
 
+type IdProp = {
+  id: number;
+};
+
 export type NavDetailsProp = {
   id: number;
   label: string;
@@ -51,8 +55,22 @@ type CommonProps = {
   label: string;
 };
 
-export type HowItWorkProps = { id: number } & CommonProps;
+export type HowItWorkProps = IdProp & CommonProps;
 
 export type HowItWorkDetailsProps = {
   details: CommonProps;
+};
+
+type BlogCommonProps = {
+  img: string;
+  title: string;
+  text: string;
+  profileImg: string;
+  profileName: string;
+};
+
+export type BlogProps = IdProp & BlogCommonProps;
+
+export type BlogDetailsProps = {
+  details: BlogCommonProps;
 };

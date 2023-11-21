@@ -1,3 +1,5 @@
+import Blog from '@/components/home-page/blog';
+import FAQ from '@/components/home-page/faq';
 import Features from '@/components/home-page/features';
 import Hero from '@/components/home-page/hero';
 import HowItWork from '@/components/home-page/how-it-work';
@@ -7,12 +9,14 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero />
       <TrustedCompanies />
       <Features />
       <HowItWork />
       <Testimonials />
-    </div>
+      <Blog />
+      <FAQ />
+    </main>
   );
 }

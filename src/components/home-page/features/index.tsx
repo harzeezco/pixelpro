@@ -8,17 +8,17 @@ function Features() {
   return (
     <section>
       <Container classNames=''>
-        <h1 className='text-7xl font-semibold text-center'>
+        <h1 className='text-center text-7xl font-semibold'>
           <span>Meet your new</span> <span className='wrap'>design</span>
           <br />
           <span className='wrap'>assistant</span>
         </h1>
-        <p className='lg:max-w-lg mx-auto text-gray-500 text-center text-base mt-3'>
+        <p className='mx-auto mt-3 text-center text-base text-gray-500 lg:max-w-lg'>
           Save days of productivity by letting ClipDrop’s artificial
           intelligence do the boring and time-consuming tasks.
         </p>
 
-        <div className='mt-20 flex flex-col md:gap-32 gap-20'>
+        <div className='mt-20 flex flex-col gap-20 md:gap-32'>
           {FEATURE_DATA.map((details, idx) => (
             <FirstFeature
               key={details.className}

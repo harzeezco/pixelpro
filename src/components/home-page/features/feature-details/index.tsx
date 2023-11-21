@@ -7,15 +7,15 @@ import Link from 'next/link';
 
 function FeatureDetails({ details, layoutType = 'reverse' }: FeatureProps) {
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center md:gap-24 gap-y-10'>
-      <article className='flex flex-col gap-6 items-start'>
+    <div className='flex flex-col items-center justify-between gap-y-10 md:flex-row md:gap-24'>
+      <article className='flex flex-col items-start gap-6'>
         <h1 className='text-6xl font-semibold lg:leading-[70px]'>
           <span className={`${details.className} inline-block `}>
             {details.headingWithGradient}
           </span>{' '}
           {details.headingWithTransparent}
         </h1>
-        <p className='lg:max-w-lg text-gray-500 text-base'>
+        <p className='text-base text-gray-500 lg:max-w-lg'>
           {details.paragraphs}
         </p>
         <Link href={details.href}>

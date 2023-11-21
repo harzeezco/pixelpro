@@ -6,9 +6,9 @@ import HowItWorkDetails from './how-it-work-details';
 
 function HowItWork() {
   return (
-    <section className='bg-dark-700 mt-20 text-center'>
+    <section className='mt-20 bg-dark-700 text-center'>
       <Container classNames='py-24'>
-        <ul className='grid md:grid-cols-2 gap-x-24 gap-y-10 mb-16'>
+        <ul className='mb-16 grid gap-x-24 gap-y-10 md:grid-cols-2'>
           {HOWITWORK_DATA.map((details) => (
             <HowItWorkDetails key={details.id} details={details} />
           ))}
