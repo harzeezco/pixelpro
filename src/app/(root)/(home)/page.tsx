@@ -1,4 +1,5 @@
 import Blog from '@/components/home-page/blog';
+import CTA from '@/components/home-page/c-t-a';
 import FAQ from '@/components/home-page/faq';
 import Features from '@/components/home-page/features';
 import Hero from '@/components/home-page/hero';
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <FAQ />
+      <CTA />
     </main>
   );
 }

@@ -1,5 +1,7 @@
+'use client';
+
 import Container from '@/components/shared/container';
-import React from 'react';
+import React, { useState } from 'react';
 import FAQDetails from './faq-details';
 
 const FAQ_ASKED_QUESTIONS = [
@@ -48,17 +50,29 @@ const FAQ_ASKED_QUESTIONS = [
 ];
 
 function FAQ() {
+  const [questions, setQuestions] = useState(FAQ_ASKED_QUESTIONS);
+
+  const handleQuestion = (id: number) => {
+    console.log(id);
+    setQuestions((prev) =>
+      prev.map((question) =>
+        question.id === id
+          ? { ...question, isOpen: !question.isOpen }
+          : { ...question },
+      ),
+    );
+  };
+
   return (
     <section className='my-32'>
       <Container classNames=''>
         <h1 className='wrap text-center text-7xl font-semibold'>FAQs</h1>
         <div className='mt-16'>
-          {FAQ_ASKED_QUESTIONS.map((details) => (
+          {questions?.map((details) => (
             <FAQDetails
               key={details.id}
-              title={details.title}
-              label={details.label}
-              isOpen={details.isOpen}
+              details={details}
+              onClick={handleQuestion}
             />
           ))}
         </div>
