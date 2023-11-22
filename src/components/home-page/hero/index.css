@@ -12,6 +12,6 @@
 
 @media (max-width: 767px) {
   #hero::before {
-    height: 55%;
+    height: 45%;
   }
 }

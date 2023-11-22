@@ -5,10 +5,10 @@ import React from 'react';
 function CTA() {
   return (
     <section>
-      <Container classNames='CTA rounded-[20px] p-24'>
-        <div className='grid items-center justify-between gap-5 px-10 md:grid-cols-2'>
+      <Container classNames='CTA rounded-[20px] p-16'>
+        <div className='grid items-center justify-between gap-5 gap-y-8 md:grid-cols-2 lg:px-10'>
           <div>
-            <h1 className='text-6xl font-semibold lg:leading-[70px]'>
+            <h1 className='mb-1 text-4xl font-semibold lg:text-6xl lg:leading-[70px]'>
               Go further with PixelPro
             </h1>
             <span className='text-sm text-gray-500 lg:pr-32'>

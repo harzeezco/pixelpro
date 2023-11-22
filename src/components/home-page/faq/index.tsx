@@ -66,7 +66,9 @@ function FAQ() {
   return (
     <section className='my-32'>
       <Container classNames=''>
-        <h1 className='wrap text-center text-7xl font-semibold'>FAQs</h1>
+        <h1 className='wrap text-center text-4xl font-semibold lg:text-7xl'>
+          FAQs
+        </h1>
         <div className='mt-16'>
           {questions?.map((details) => (
             <FAQDetails

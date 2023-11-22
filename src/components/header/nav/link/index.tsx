@@ -33,7 +33,7 @@ function Links({ details }: LinkProp) {
 
           <div
             style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}
-            className='h-[6px] w-[15px] ml-2 bg-white rotate-180 transition-rotate group-hover:rotate-0 group-hover:bg-blue-700'
+            className='ml-2 h-[6px] w-[15px] rotate-180 bg-white transition-rotate group-hover:rotate-0 group-hover:bg-blue-700'
           />
 
           <Popup isPopup={isPopup} />

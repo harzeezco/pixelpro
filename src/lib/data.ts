@@ -42,63 +42,84 @@ export const NAV_LINKS: NavLinksProp = [
 export const FOOTER_LINKS: FooterNavLinksProp = [
   {
     id: 0,
-    title: 'Marketplace',
+    title: 'Product',
     links: [
       {
         id: 0,
-        label: 'Explore',
+        label: 'Remove Background',
         href: '',
       },
       {
         id: 1,
-        label: 'Blog',
+        label: 'Remove Objects',
         href: '',
       },
       {
         id: 2,
-        label: 'How it works',
+        label: 'Upscale',
         href: '',
       },
       {
         id: 3,
-        label: 'Jobs',
+        label: 'Pricing',
         href: '',
       },
       {
         id: 4,
-        label: 'Help center',
+        label: 'API Docs',
         href: '',
       },
     ],
   },
   {
     id: 1,
-    title: 'Marketplace',
+    title: 'Services',
     links: [
       {
         id: 0,
-        label: 'Profile',
+        label: 'PixelPro Production',
         href: '',
       },
       {
         id: 1,
-        label: 'Favorites',
+        label: 'Studio Hire',
         href: '',
       },
       {
         id: 2,
-        label: 'Watchlist',
+        label: 'Affiliate Program',
         href: '',
       },
       {
         id: 3,
-        label: 'My Collections',
+        label: 'Request a Quote',
         href: '',
       },
     ],
   },
   {
     id: 2,
+    title: 'Resources',
+    links: [
+      {
+        id: 0,
+        label: 'How To BG Remove',
+        href: '',
+      },
+      {
+        id: 1,
+        label: 'Our Blog',
+        href: '',
+      },
+      {
+        id: 2,
+        label: 'Help Center',
+        href: '',
+      },
+    ],
+  },
+  {
+    id: 0,
     title: 'Company',
     links: [
       {
@@ -108,17 +129,22 @@ export const FOOTER_LINKS: FooterNavLinksProp = [
       },
       {
         id: 1,
-        label: 'Careers',
+        label: 'Contact',
         href: '',
       },
       {
         id: 2,
-        label: 'Ventures',
+        label: 'Privacy',
         href: '',
       },
       {
         id: 3,
-        label: 'Grants',
+        label: 'Terms',
+        href: '',
+      },
+      {
+        id: 4,
+        label: 'Cookies',
         href: '',
       },
     ],
@@ -131,28 +157,28 @@ export const POPUPDETAILS: PopupDetailsProp[] = [
     img: 'first.png',
     alt: 'a man wearing jacket',
     title: 'Remove BG',
-    href: '',
+    href: '/remove-bg',
   },
   {
     id: 1,
     img: 'second.png',
     alt: 'a products',
     title: 'Remove Objects',
-    href: '',
+    href: '/remove-obj',
   },
   {
     id: 2,
     img: 'third.png',
     alt: 'a man who open his mouth',
     title: 'Upscale',
-    href: '',
+    href: '/upscale',
   },
   {
     id: 3,
     img: 'fourth.png',
     title: 'Relight',
     alt: 'a man with handsome face',
-    href: '',
+    href: '/relight',
   },
 ];
 

@@ -38,7 +38,7 @@ function Testimonials() {
         <div className='flex gap-5'>
           <TestimonialDetails />
           <TestimonialDetails />
-          <TestimonialDetails />
+          {/* <TestimonialDetails /> */}
         </div>
       </div>
     </section>

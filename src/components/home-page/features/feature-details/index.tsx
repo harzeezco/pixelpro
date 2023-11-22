@@ -9,7 +9,7 @@ function FeatureDetails({ details, layoutType = 'reverse' }: FeatureProps) {
   return (
     <div className='flex flex-col items-center justify-between gap-y-10 md:flex-row md:gap-24'>
       <article className='flex flex-col items-start gap-6'>
-        <h1 className='text-6xl font-semibold lg:leading-[70px]'>
+        <h1 className='text-[40px] font-semibold leading-10 lg:text-6xl lg:leading-[70px]'>
           <span className={`${details.className} inline-block `}>
             {details.headingWithGradient}
           </span>{' '}

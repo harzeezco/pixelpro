@@ -10,10 +10,10 @@ function HowItWorkDetails({ details }: HowItWorkDetailsProps) {
         width={90}
         height={90}
         alt={details.alt}
-        className='h-[75px] w-[90px]'
+        className='h-[50px] w-[60px] lg:h-[75px] lg:w-[90px]'
       />
       <div className='text-start'>
-        <h3 className='mb-2 text-[28px] font-semibold leading-9'>
+        <h3 className='mb-1 text-lg font-semibold leading-9 lg:text-[28px]'>
           {details.title}
         </h3>
         <p className='text-base text-gray-500'>{details.label}</p>

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import mergeClasses from '@/lib/utils';
 import { POPUPDETAILS } from '@/lib/data';
+import Link from 'next/link';
 
 type PopupProp = {
   isPopup: boolean;
@@ -17,22 +18,24 @@ function Popup({ isPopup }: PopupProp) {
       aria-hidden={isPopup}
     >
       {POPUPDETAILS.map((details) => (
-        <div key={details.id} className='relative'>
-          <Image
-            src={`/png/pop-up/${details.img}`}
-            width={170}
-            height={130}
-            alt={details.alt}
-            className='w-[190px]'
-          />
-          <span
-            className={mergeClasses(
-              'absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-[-50%] whitespace-nowrap font-semibold',
-            )}
-          >
-            {details.title}
-          </span>
-        </div>
+        <li key={details.id} title={details.title}>
+          <Link href={details.href} className='relative'>
+            <Image
+              src={`/png/pop-up/${details.img}`}
+              width={170}
+              height={130}
+              alt={details.alt}
+              className='w-[190px]'
+            />
+            <span
+              className={mergeClasses(
+                'absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-[-50%] whitespace-nowrap font-semibold',
+              )}
+            >
+              {details.title}
+            </span>
+          </Link>
+        </li>
       ))}
     </div>
   );

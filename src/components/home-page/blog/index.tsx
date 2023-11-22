@@ -8,10 +8,10 @@ function Blog() {
   return (
     <section className='my-24'>
       <Container classNames='text-center'>
-        <h1 className='wrap text-center text-7xl font-semibold'>
+        <h1 className='wrap text-center text-4xl font-semibold lg:text-7xl'>
           Latest Articles
         </h1>
-        <ul className='mb-16 mt-14 flex justify-between gap-10'>
+        <ul className='mb-16 mt-14 flex flex-col justify-between gap-10 md:flex-row'>
           {BLOG_DATA.map((details) => (
             <BlogDetails key={details.id} details={details} />
           ))}

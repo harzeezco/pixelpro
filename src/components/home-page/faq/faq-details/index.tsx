@@ -23,8 +23,10 @@ function FAQDetails({ details, onClick }: FAQDetailsProps & Onclprop) {
       onClick={() => onClick(details.id)}
       role='presentation'
     >
-      <div className='flex items-center justify-between'>
-        <h3 className='text-[20px] font-medium leading-9'>{details.title}</h3>
+      <div className='flex items-center justify-between gap-8'>
+        <h3 className='text-base font-medium md:text-[20px] md:leading-9'>
+          {details.title}
+        </h3>
         <div
           className={mergeClasses(
             'flex items-center justify-center rounded-full p-2 border border-solid border-[#E8E8E8] transition-all',

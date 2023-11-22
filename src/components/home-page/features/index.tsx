@@ -8,7 +8,7 @@ function Features() {
   return (
     <section>
       <Container classNames=''>
-        <h1 className='text-center text-7xl font-semibold'>
+        <h1 className='text-center text-4xl font-semibold lg:text-7xl'>
           <span>Meet your new</span> <span className='wrap'>design</span>
           <br />
           <span className='wrap'>assistant</span>
