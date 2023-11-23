@@ -17,6 +17,7 @@ const config: Config = {
       backgroundColor: {
         'gray-100': '#2e2e2e',
         'gray-200': '#FFFFFF0D',
+        'dark-600': '#131314',
         'dark-700': '#1c1d1e',
         body: '#101112',
         'blue-500': '#0095FF',

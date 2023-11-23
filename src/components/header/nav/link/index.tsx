@@ -19,7 +19,7 @@ function Links({ details }: LinkProp) {
     'hover:bg-gray-100 transition-all ease-linear py-[10px] px-[20px] rounded-[38px]';
 
   return (
-    <Link href={details.href}>
+    <li>
       {details.isPopup ? (
         <div
           onClick={() => setIsPopup(!isPopup)}
@@ -39,11 +39,11 @@ function Links({ details }: LinkProp) {
           <Popup isPopup={isPopup} />
         </div>
       ) : (
-        <li className={linkStyles}>
+        <Link href={details.href} className={linkStyles}>
           <span className='text-lg'>{details.label}</span>
-        </li>
+        </Link>
       )}
-    </Link>
+    </li>
   );
 }
 

@@ -7,7 +7,7 @@ import HowItWorkDetails from './how-it-work-details';
 function HowItWork() {
   return (
     <section className='mt-20 bg-dark-700 text-center'>
-      <Container classNames='py-24'>
+      <Container classNames='py-24 grid place-items-center'>
         <ul className='mb-16 grid gap-x-24 gap-y-10 md:grid-cols-2'>
           {HOWITWORK_DATA.map((details) => (
             <HowItWorkDetails key={details.id} details={details} />

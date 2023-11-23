@@ -7,7 +7,7 @@ import BlogDetails from './blog-details';
 function Blog() {
   return (
     <section className='my-24'>
-      <Container classNames='text-center'>
+      <Container classNames='grid place-items-center'>
         <h1 className='wrap text-center text-4xl font-semibold lg:text-7xl'>
           Latest Articles
         </h1>

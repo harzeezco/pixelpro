@@ -10,16 +10,16 @@ type PopupProp = {
 
 function Popup({ isPopup }: PopupProp) {
   return (
-    <div
+    <ul
       className={mergeClasses(
-        'flex gap-x-3 w-full max-w-[670px] mx-auto bg-gray-100 top-20 py-7 px-3 items-center rounded-lg fixed left-[25%] z-10 transition-pop-up ease-in-out',
+        'flex gap-x-3 w-full max-w-[670px] mx-auto bg-gray-100 top-20 py-7 px-3 items-center rounded-lg absolute left-[25%] z-10 transition-pop-up ease-in-out',
         isPopup ? 'h-[140px] opacity-1 visible' : 'opacity-0 invisible',
       )}
       aria-hidden={isPopup}
     >
       {POPUPDETAILS.map((details) => (
-        <li key={details.id} title={details.title}>
-          <Link href={details.href} className='relative'>
+        <li key={details.id} title={details.title} className='relative'>
+          <Link href={details.href}>
             <Image
               src={`/png/pop-up/${details.img}`}
               width={170}
@@ -37,7 +37,7 @@ function Popup({ isPopup }: PopupProp) {
           </Link>
         </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

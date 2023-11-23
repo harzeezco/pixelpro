@@ -34,6 +34,10 @@
   @apply bg-gradient-to-r from-[#722FFF] via-[#722FFF] to-[#B12EFF] bg-clip-text text-transparent;
 }
 
+.bg-gradient {
+  @apply bg-gradient-to-r from-[#AC2EF8] via-[#FC5796] to-[#FC5796] bg-clip-text text-transparent;
+}
+
 .bg-pink-gradient {
   @apply bg-gradient-to-r from-[#FFCB01] via-[#FF5993] to-[#FF5993] bg-clip-text text-transparent;
 }
