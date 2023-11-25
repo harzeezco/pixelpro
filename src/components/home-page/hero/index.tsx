@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Container from '@/components/shared/container';
+import Button from '@/components/shared/button';
+import FeaturesList from './features-list';
+import HeadLine from './hero-headline';
 import './index.css';
-import Heading from './heading';
-import Features from './features';
-import Button from '../../shared/button';
 
 function Hero() {
   return (
     <section className='relative' id='hero'>
       <Container className='grid place-items-center' aria-labelledby='hero'>
-        <Heading />
-        <Features />
+        <HeadLine />
+        <FeaturesList />
         <Button variant='blue'>Try For Free</Button>
         <Image
           src='/png/video.png'

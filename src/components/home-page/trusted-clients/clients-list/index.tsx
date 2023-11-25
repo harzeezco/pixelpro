@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { COMPANIES } from '@/lib/data';
 import './index.css';
 
-function Companies() {
+function ClientList() {
   return (
     <ul
       className='items-center gap-6 lg:flex'
-      title='Swipe to view more company'
+      title='Swipe to view more clients'
       id='slides'
     >
       {COMPANIES.map((details) => (
@@ -28,4 +28,4 @@ function Companies() {
   );
 }
 
-export default Companies;
+export default ClientList;

@@ -27,11 +27,7 @@ function Popup({ isPopup }: PopupProp) {
               alt={details.alt}
               className='w-[190px]'
             />
-            <span
-              className={mergeClasses(
-                'absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-[-50%] whitespace-nowrap font-semibold',
-              )}
-            >
+            <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-semibold'>
               {details.title}
             </span>
           </Link>

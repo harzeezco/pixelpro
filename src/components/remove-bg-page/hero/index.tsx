@@ -2,8 +2,8 @@
 import Container from '@/components/shared/container';
 import Image from 'next/image';
 import React from 'react';
-import UploadImageBox from './upload-img-box';
-import RandomImages from './random-images';
+import UploadImageBox from '../../shared/upload-img-box';
+import RandomImages from '../../shared/random-images';
 
 function Hero() {
   return (
@@ -22,6 +22,7 @@ function Hero() {
           alt=''
           width={596}
           height={439}
+          className='h-[500px] w-[596px]'
         />
       </Container>
     </section>

@@ -5,14 +5,14 @@ import Features from '@/components/home-page/features';
 import Hero from '@/components/home-page/hero';
 import HowItWork from '@/components/home-page/how-it-work';
 import Testimonials from '@/components/home-page/testimonials';
-import TrustedCompanies from '@/components/home-page/trusted-companies';
 import FAQ from '@/components/shared/faq';
+import TrustedClients from '@/components/home-page/trusted-clients';
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <TrustedCompanies />
+      <TrustedClients />
       <Features />
       <HowItWork />
       <Testimonials />

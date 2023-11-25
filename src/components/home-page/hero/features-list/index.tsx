@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const FEATURES = [
+const FEATURES: { id: number; label: string }[] = [
   {
     id: 0,
     label: 'Free Background Remover',
@@ -16,7 +16,7 @@ const FEATURES = [
   },
 ];
 
-function Features() {
+function FeaturesList() {
   return (
     <ul className='mb-8 mt-2 flex flex-wrap items-center justify-center gap-x-7 gap-y-4'>
       {FEATURES.map((feature) => (
@@ -34,4 +34,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default FeaturesList;

@@ -2,6 +2,7 @@ import {
   BlogProps,
   CompaniesProp,
   FeatureDataProps,
+  FeatureDetailsProps,
   FooterNavLinksProp,
   HowItWorkProps,
   NavLinksProp,
@@ -233,31 +234,43 @@ export const COMPANIES: CompaniesProp = [
   },
 ];
 
-export const FEATURE_DATA: FeatureDataProps[] = [
+export const FEATURE_DATA: FeatureDetailsProps[] = [
   {
-    headingWithGradient: 'Erase any',
-    headingWithTransparent: 'background',
+    gradientText: 'Erase any',
+    noGradientText: 'background',
+    gradientPosition: 'top',
+    bottomText: '',
     img: 'capman.png',
-    paragraphs:
+    label: [
       "Edit photos quickly and accurately without all the effort. PhotoRoom makes it easy to keep the focus on the foreground, plus it's 2x more accurate than other apps.",
+    ],
+    uniqueFeatures: [],
     href: '',
     className: 'bg-blue-gradient',
   },
   {
-    headingWithGradient: 'Remove objects',
-    headingWithTransparent: 'with a swipe',
+    gradientText: 'Remove objects',
+    noGradientText: 'with a swipe',
+    gradientPosition: 'top',
+    bottomText: '',
     img: 'product.png',
-    paragraphs:
+    label: [
       'Instantly remove unwanted objects and defects. With just a swipe of your fingertip, you can make sure your snapshots are flawless.',
+    ],
+    uniqueFeatures: [],
     href: '',
     className: 'bg-purple-gradient',
   },
   {
-    headingWithGradient: 'Relight',
-    headingWithTransparent: 'your photographs',
+    gradientText: 'Relight',
+    noGradientText: 'your photographs',
+    gradientPosition: 'top',
+    bottomText: '',
     img: 'selfie.png',
-    paragraphs:
+    label: [
       'Relight your images with beautiful lights. Instantly light unwanted objects. With just a swipe of your point, you can make sure your snapshots are flawless.',
+    ],
+    uniqueFeatures: [],
     href: '',
     className: 'bg-pink-gradient',
   },

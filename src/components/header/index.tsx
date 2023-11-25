@@ -19,7 +19,7 @@ function Header() {
           <Button variant='sign-up'>Sign up for free</Button>
         </div>
         <div className='lg:hidden'>
-          <Image src='/svg/menu.svg' alt='' width={30} height={30} />
+          <Image src='/svg/menu.svg' alt='menu bar' width={30} height={30} />
         </div>
       </Container>
     </header>

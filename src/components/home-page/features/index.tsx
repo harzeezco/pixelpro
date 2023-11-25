@@ -2,7 +2,7 @@
 import React from 'react';
 import Container from '@/components/shared/container';
 import { FEATURE_DATA } from '@/lib/data';
-import FeatureDetails from './feature-details';
+import FeatureDetails from '@/components/shared/Feature';
 
 function Features() {
   return (
@@ -27,7 +27,7 @@ function Features() {
           {FEATURE_DATA.map((details, idx) => (
             <FeatureDetails
               key={details.className}
-              details={details}
+              {...details}
               layoutType={idx % 2 === 0 ? 'default' : 'reverse'}
             />
           ))}

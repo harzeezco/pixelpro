@@ -74,3 +74,15 @@ export type BlogProps = IdProp & BlogCommonProps;
 export type BlogDetailsProps = {
   details: BlogCommonProps;
 };
+
+export type FeatureDetailsProps = {
+  gradientPosition: string;
+  className: string;
+  gradientText: string;
+  noGradientText: string;
+  label: string[];
+  uniqueFeatures: string[];
+  href: string;
+  img: string;
+  bottomText: string;
+};
