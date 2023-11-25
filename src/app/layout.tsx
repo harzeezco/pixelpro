@@ -33,9 +33,6 @@ export const metadata: Metadata = {
   title: 'PixelPro - Background Remover',
   description:
     'PixelPro - An AI website Removing background from Images without reducing quality',
-  icons: {
-    icon: '../public/svg/favicon.svg',
-  },
 };
 
 export default function RootLayout({

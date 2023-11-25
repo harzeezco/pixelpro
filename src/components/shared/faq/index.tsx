@@ -1,3 +1,5 @@
+/* eslint-disable no-confusing-arrow */
+
 'use client';
 
 import Container from '@/components/shared/container';
@@ -53,7 +55,6 @@ function FAQ() {
   const [questions, setQuestions] = useState(FAQ_ASKED_QUESTIONS);
 
   const handleQuestion = (id: number) => {
-    console.log(id);
     setQuestions((prev) =>
       prev.map((question) =>
         question.id === id
@@ -64,12 +65,12 @@ function FAQ() {
   };
 
   return (
-    <section className='my-32'>
-      <Container classNames=''>
-        <h1 className='wrap text-center text-4xl font-semibold lg:text-7xl'>
+    <section id='FAQ'>
+      <Container aria-labelledby='FAQ' className='mt-10'>
+        <h1 className='text-secondary-gradient common-gradient-clx text-center text-4xl font-semibold lg:text-7xl'>
           FAQs
         </h1>
-        <div className='mt-16'>
+        <div className='mt-14'>
           {questions?.map((details) => (
             <FAQDetails
               key={details.id}

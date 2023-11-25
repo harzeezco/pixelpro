@@ -6,9 +6,9 @@ import BlogDetails from './blog-details';
 
 function Blog() {
   return (
-    <section className='my-24'>
-      <Container classNames='grid place-items-center'>
-        <h1 className='wrap text-center text-4xl font-semibold lg:text-7xl'>
+    <section id='blog'>
+      <Container className='grid place-items-center' aria-labelledby='blog'>
+        <h1 className='text-secondary-gradient common-gradient-clx text-center text-4xl font-semibold lg:text-7xl'>
           Latest Articles
         </h1>
         <ul className='mb-16 mt-14 flex flex-col justify-between gap-10 md:flex-row'>

@@ -7,7 +7,7 @@ type LinkProp = NavDetailsProp;
 
 function Nav() {
   return (
-    <ul className='flex items-center gap-x-4 font-normal'>
+    <ul className='flex items-center gap-x-4'>
       {NAV_LINKS.map((details: LinkProp) => (
         <Links key={details.id} details={details} />
       ))}

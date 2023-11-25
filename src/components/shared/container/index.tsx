@@ -1,20 +1,22 @@
 import React from 'react';
-import mergeClasses from '@/lib/utils';
 
 function Container({
-  children,
-  classNames,
+  className,
+  ...otherProps
 }: {
   children: React.ReactNode;
-  classNames: string;
+  className?: string | undefined;
 }) {
   return (
     <div
-      className={mergeClasses('max-w-container-width mx-auto px-6', classNames)}
-    >
-      {children}
-    </div>
+      className={`mx-auto max-w-container-width px-6 pb-20 ${className}`}
+      {...otherProps}
+    />
   );
 }
+
+Container.defaultProps = {
+  className: '',
+};
 
 export default Container;

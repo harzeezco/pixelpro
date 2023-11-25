@@ -4,7 +4,7 @@ import TestimonialDetails from './testimonial-details';
 
 function Testimonials() {
   return (
-    <section className='testimonial py-16'>
+    <section className='testimonial mb-20 py-16'>
       <div className='px-7'>
         <div className='mb-10 flex items-center justify-around'>
           <h1 className='text-7xl font-semibold'>

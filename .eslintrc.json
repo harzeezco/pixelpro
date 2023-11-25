@@ -9,6 +9,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "jsx-quotes": ["error", "prefer-single"]
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-props-no-spreading": "off"
   }
 }

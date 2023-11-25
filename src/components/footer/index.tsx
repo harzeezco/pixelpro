@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,8 +7,11 @@ import Container from '../shared/container';
 
 function Footer() {
   return (
-    <footer className='mt-24 bg-dark-700 pb-12 pt-24'>
-      <Container classNames='grid lg:grid-cols-[37%_63%] mb-14'>
+    <footer className='bg-dark-700 pb-10 pt-24' id='footer'>
+      <Container
+        className='grid pb-0 lg:grid-cols-[37%_63%]'
+        aria-labelledby='footer'
+      >
         <div className='max-w-[74%]'>
           <Link href='/' className='mb-3 inline-block'>
             <Image

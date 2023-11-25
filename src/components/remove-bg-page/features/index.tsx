@@ -11,7 +11,7 @@ const FEATURE_DATA = [
     headingWithTransparent: 'in a matter of seconds',
     img: 'capman.png',
     paragraphs:
-      'Our online background remover quickly spots the subject in any photograph and produces a clean cutout for you.',
+      ['Our online background remover quickly spots the subject in any photograph and produces a clean cutout for you.'],
     href: '',
     className: 'bg-blue-gradient',
   },
@@ -20,8 +20,10 @@ const FEATURE_DATA = [
     headingWithGradientPosition: 'bottom',
     headingWithTransparent: 'Speed up your workflow with our',
     img: 'tools.png',
-    paragraphs:
+    paragraphs: [
       'Instantly remove unwanted objects and defects. With just a swipe of your fingertip, you can make sure your snapshots are flawless.',
+      "To enhance your productivity and workflow, we've also integrated plugins straight into the top design tools, software, applications, and eCommerce platforms.",
+    ],
     href: '',
     className: 'bg-gradient',
   },
@@ -29,13 +31,13 @@ const FEATURE_DATA = [
 
 function Features() {
   return (
-    <section className='my-32'>
-      <Container classNames=''>
+    <section className='my-10'>
+      <Container>
         <ul className='grid gap-20'>
           {FEATURE_DATA.map((details) => (
             <div className='grid grid-cols-2 justify-between gap-y-10 md:flex-row md:gap-24'>
               <article className='flex flex-col items-start gap-2'>
-                <h1 className='text-[40px] font-semibold leading-10 lg:text-[54px] lg:leading-[70px]'>
+                <h1 className='text-[40px] font-semibold leading-10 lg:text-[54px] lg:leading-[55px]'>
                   {details.headingWithGradientPosition === 'top' && (
                     <span className={`${details.className} inline-block`}>
                       {details.headingWithGradient}
@@ -48,9 +50,11 @@ function Features() {
                     </span>
                   )}
                 </h1>
-                <p className='mb-4 text-base text-gray-500 lg:max-w-lg'>
-                  {details.paragraphs}
-                </p>
+                {details.paragraphs.map((paragraph) => (
+                  <p className='mb-4 text-base text-gray-500 lg:max-w-lg'>
+                    {paragraph}
+                  </p>
+                ))}
                 <Link href={details.href}>
                   <Button variant='blue'>Try For Free</Button>
                 </Link>

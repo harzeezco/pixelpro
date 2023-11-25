@@ -10,12 +10,12 @@ function FeatureDetails({ details, layoutType = 'reverse' }: FeatureProps) {
     <div className='flex flex-col items-center justify-between gap-y-10 md:flex-row md:gap-24'>
       <article className='flex flex-col items-start gap-4'>
         <h1 className='text-[40px] font-semibold leading-10 lg:text-6xl lg:leading-[70px]'>
-          <span className={`${details.className} inline-block `}>
+          <span className={`${details.className} inline-block`}>
             {details.headingWithGradient}
           </span>{' '}
           {details.headingWithTransparent}
         </h1>
-        <p className='mb-5 text-base text-gray-500 lg:max-w-lg'>
+        <p className='mb-4 text-base text-gray-500 lg:max-w-lg'>
           {details.paragraphs}
         </p>
         <Link href={details.href}>
@@ -32,6 +32,7 @@ function FeatureDetails({ details, layoutType = 'reverse' }: FeatureProps) {
           width={631}
           height={574}
           alt='a man wearing a cap'
+          className='h-[434px]'
         />
       </div>
     </div>

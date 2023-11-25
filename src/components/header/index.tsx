@@ -1,22 +1,20 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import Container from '../shared/container';
 import Nav from './nav';
 import Button from '../shared/button';
+import Logo from '../shared/Logo';
 
 function Header() {
   return (
     <header>
-      <Container classNames='justify-between items-center px-6 h-[96px] flex'>
-        <Link href='/'>
-          <Image src='/svg/logo.svg' width={132} height={32} alt='logo' />
-        </Link>
+      <Container className='flex h-[96px] items-center justify-between p-14 pb-0'>
+        <Logo width={132} height={32} />
 
         <nav className='hidden lg:flex'>
           <Nav />
         </nav>
-        <div className='hidden lg:flex gap-x-5'>
+        <div className='hidden gap-x-5 lg:flex'>
           <Button variant='log-in'>Log in</Button>
           <Button variant='sign-up'>Sign up for free</Button>
         </div>

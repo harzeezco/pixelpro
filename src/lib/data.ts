@@ -316,3 +316,30 @@ export const BLOG_DATA: BlogProps[] = [
     profileName: 'Ksenia Sverku',
   },
 ];
+
+export const REMOVEBGHOWITWORKDETAILS = [
+  {
+    id: 0,
+    img: 'upload.png',
+    title: 'Upload  Image',
+    alt: 'Upload Image',
+    label:
+      'Click the Upload Image button, drag or copy then paste your image to remove background from it',
+  },
+  {
+    id: 1,
+    img: 'ai.png',
+    alt: 'Ai generated image',
+    title: 'Remove automatically',
+    label:
+      'FocoClipping will remove BG automatically once the image is uploaded.',
+  },
+  {
+    id: 2,
+    img: 'free.png',
+    alt: 'Upload Image',
+    title: 'Download cut-out image',
+    label:
+      'Finally click the “Download” icon to freely download the transparent or white background image without any hassles.',
+  },
+];

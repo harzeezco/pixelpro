@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrap {
-  text-align: center;
-  color: transparent;
-  animation: animation 1.7s linear infinite;
-  background: radial-gradient(circle, #ac2ef8 0%, #ff5993 100%);
-  background-size: 200%;
-  background-clip: text;
+.text-primary-gradient {
+  background: radial-gradient(circle, #ffa500 0%, #ff5993 100%);
 }
 
-.wrap-head {
+.text-secondary-gradient {
+  background: radial-gradient(circle, #ac2ef8 0%, #ff5993 100%);
+}
+
+.common-gradient-clx {
   text-align: center;
   color: transparent;
   animation: animation 1.7s linear infinite;
-  background: radial-gradient(circle, #ffa500 0%, #ff5993 100%);
   background-size: 200%;
   background-clip: text;
 }
@@ -42,8 +40,11 @@
   @apply bg-gradient-to-r from-[#FFCB01] via-[#FF5993] to-[#FF5993] bg-clip-text text-transparent;
 }
 
+.bg-p-gradient {
+  @apply bg-gradient-to-r from-[#FF5E8D] via-[#FF5E8D] to-[#FFB320] bg-clip-text text-transparent;
+}
+
 .testimonial {
-  /* background: linear-gradient(to top left, #ff5993 70%, #b12eff 30%); */
   background-image: linear-gradient(to top left, #ff5993 5%, #b12eff 100%);
 }
 

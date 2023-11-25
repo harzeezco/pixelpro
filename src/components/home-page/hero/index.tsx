@@ -9,7 +9,7 @@ import Button from '../../shared/button';
 function Hero() {
   return (
     <section className='relative' id='hero'>
-      <Container classNames='mt-10 pb-20 grid place-items-center'>
+      <Container className='grid place-items-center' aria-labelledby='hero'>
         <Heading />
         <Features />
         <Button variant='blue'>Try For Free</Button>

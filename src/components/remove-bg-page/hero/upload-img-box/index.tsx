@@ -3,7 +3,7 @@ import React from 'react';
 
 function UploadImageBox() {
   return (
-    <div className='mt-8 flex max-w-lg flex-col items-center gap-2 rounded-2xl border-[1.5px] border-dotted border-white bg-gray-100 p-8'>
+    <div className='mt-10 flex max-w-lg flex-col items-center gap-2 rounded-2xl border-[1.5px] border-dotted border-white bg-gray-100 p-8'>
       <Button variant='blue'>
         <span className='mr-2 inline-block rounded-full bg-white p-[5px]'>
           <svg

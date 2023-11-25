@@ -6,11 +6,16 @@ import './index.css';
 function Companies() {
   return (
     <ul
-      className='slides items-center gap-6 lg:flex'
+      className='items-center gap-6 lg:flex'
       title='Swipe to view more company'
+      id='slides'
     >
       {COMPANIES.map((details) => (
-        <li key={details.id} className='cursor-pointer' title={details.alt}>
+        <li
+          key={details.id}
+          className='relative shrink-0 scale-100 cursor-pointer pr-1 text-lg'
+          title={details.alt}
+        >
           <Image
             src={`/png/companies/${details.img}`}
             alt={details.alt}
