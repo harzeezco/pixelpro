@@ -12,7 +12,7 @@ function RemoveObj() {
       <HowItWork />
       <Features />
       <OtherProducts />
-      <CTA img='wow.png'/>
+      <CTA img='snapshot-1.png'/>
     </main>
   );
 }

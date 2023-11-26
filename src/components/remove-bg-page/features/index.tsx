@@ -12,11 +12,7 @@ const FEATURE_DATA = [
     label: [
       'Our online background remover quickly spots the subject in any photograph and produces a clean cutout for you.',
     ],
-    uniqueFeatures: [
-      'Automatic & Quick Results',
-      'Increase Resolution',
-      'Retain Details',
-    ],
+    uniqueFeatures: [],
     href: '',
     className: 'bg-blue-gradient',
   },
@@ -33,14 +29,14 @@ const FEATURE_DATA = [
     uniqueFeatures: [],
     href: '',
     className: 'bg-gradient',
-  }
+  },
 ];
 
 function Features() {
   return (
     <section className='my-10'>
       <Container>
-        <div className='grid gap-20'>
+        <div className='grid gap-32'>
           {FEATURE_DATA.map((details, idx) => (
             <FeatureDetails
               {...details}

@@ -14,7 +14,7 @@ const FEATURE_DATA = [
     ],
     uniqueFeatures: [],
     href: '',
-    className: 'bg-blue-gradient',
+    className: 'bg-gradient',
   },
   {
     gradientText: 'Friend',
@@ -27,7 +27,7 @@ const FEATURE_DATA = [
     ],
     uniqueFeatures: [],
     href: '',
-    className: 'bg-gradient',
+    className: 'bg-purple-gradient',
   },
 ];
 
@@ -35,7 +35,7 @@ function Features() {
   return (
     <section className='my-10 pt-20'>
       <Container>
-        <div className='grid gap-20'>
+        <div className='grid gap-32'>
           {FEATURE_DATA.map((details, idx) => (
             <FeatureDetails
               {...details}
