@@ -5,11 +5,11 @@ import React from 'react';
 const REMOVEBGHOWITWORKDETAILS = [
   {
     id: 0,
-    img: 'remove-obj.png',
-    title: 'Remove Objects',
+    img: 'remove-bg.png',
+    title: 'Remove BG',
     alt: 'Upload Image',
     label:
-      'Remove any object, person, text, or defect from pictures in one click',
+      'Remove any Background, person, text, or defect from pictures in one click',
   },
   {
     id: 1,
@@ -38,7 +38,7 @@ function OtherProducts() {
         </h1>
         <ul className='mt-12 grid grid-cols-3 gap-7'>
           {REMOVEBGHOWITWORKDETAILS.map((details) => (
-            <OtherProductsDetails key={details.id} {...details} />
+           <OtherProductsDetails key={details.id} {...details} />
           ))}
         </ul>
       </Container>

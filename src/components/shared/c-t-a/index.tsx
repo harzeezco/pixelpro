@@ -2,7 +2,7 @@ import Container from '@/components/shared/container';
 import Image from 'next/image';
 import React from 'react';
 
-function CTA() {
+function CTA({ img }: { img: string; }) {
   return (
     <section id='CTA'>
       <Container
@@ -40,7 +40,7 @@ function CTA() {
             </div>
           </div>
           <div>
-            <Image src='/png/snap.png' alt='' width={497} height={455} />
+            <Image src={`/png/${img}`} alt='' width={497} height={455} />
           </div>
         </div>
       </Container>

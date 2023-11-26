@@ -48,7 +48,7 @@ export type FeatureProps = { layoutType: 'default' | 'reverse' } & {
   details: FeatureDataProps;
 };
 
-type CommonProps = {
+export type CommonProps = {
   img: string;
   alt: string;
   title: string;

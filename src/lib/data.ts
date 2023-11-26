@@ -330,10 +330,10 @@ export const BLOG_DATA: BlogProps[] = [
   },
 ];
 
-export const REMOVEBGHOWITWORKDETAILS = [
+export const REMOVEBGHOWITWORKDETAILS: HowItWorkProps[] = [
   {
     id: 0,
-    img: 'upload.png',
+    img: 'remove-bg/how-it-work/upload.png',
     title: 'Upload  Image',
     alt: 'Upload Image',
     label:
@@ -341,7 +341,7 @@ export const REMOVEBGHOWITWORKDETAILS = [
   },
   {
     id: 1,
-    img: 'ai.png',
+    img: 'remove-bg/how-it-work/ai.png',
     alt: 'Ai generated image',
     title: 'Remove automatically',
     label:
@@ -349,10 +349,44 @@ export const REMOVEBGHOWITWORKDETAILS = [
   },
   {
     id: 2,
-    img: 'free.png',
+    img: 'remove-bg/how-it-work/free.png',
     alt: 'Upload Image',
     title: 'Download cut-out image',
     label:
       'Finally click the “Download” icon to freely download the transparent or white background image without any hassles.',
+  },
+];
+export const REMOVEOBJHOWITWORKDETAILS: HowItWorkProps[] = [
+  {
+    id: 0,
+    img: 'remove-obj/how-it-work/upload.png',
+    title: 'Upload Your Image',
+    alt: 'Upload Image',
+    label:
+      'You can be used to begin editing images by dragging and dropping them into the "Upload Photo" Frame.',
+  },
+  {
+    id: 1,
+    img: 'remove-obj/how-it-work/upload.png',
+    alt: 'Ai generated image',
+    title: 'Choose to edit an image',
+    label:
+      'Choose Eraser to blur, enhance, remove acne, and restore old photos, or choose Objects automatically detected by AI to remove objects from photos.',
+  },
+  {
+    id: 2,
+    img: 'remove-obj/how-it-work/upload.png',
+    alt: 'Upload Image',
+    title: 'Adjust and preview',
+    label:
+      'AI can quickly edit photographs using zoom in, zoom out, undo or redo, alter, preview, and apply.',
+  },
+  {
+    id: 3,
+    img: 'remove-obj/how-it-work/upload.png',
+    alt: 'Upload Image',
+    title: 'Download & share',
+    label:
+      "Download the lovely image you've edited after finishing your editing software, or post it directly to social media.",
   },
 ];

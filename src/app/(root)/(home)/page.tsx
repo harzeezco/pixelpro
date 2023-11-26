@@ -1,6 +1,6 @@
 import React from 'react';
 import Blog from '@/components/home-page/blog';
-import CTA from '@/components/home-page/c-t-a';
+import CTA from '@/components/shared/c-t-a';
 import Features from '@/components/home-page/features';
 import Hero from '@/components/home-page/hero';
 import HowItWork from '@/components/home-page/how-it-work';
@@ -18,7 +18,7 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <FAQ />
-      <CTA />
+      <CTA img='snap.png' />
     </main>
   );
 }

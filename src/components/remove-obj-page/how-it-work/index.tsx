@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/components/shared/container';
-import { REMOVEBGHOWITWORKDETAILS } from '@/lib/data';
+import { REMOVEOBJHOWITWORKDETAILS } from '@/lib/data';
 import HowItWorkDetails from '@/components/shared/how-it-work-details';
 
 function HowItWork() {
@@ -11,12 +11,12 @@ function HowItWork() {
           <span>How It</span> <span className='bg-purple-gradient'>Works</span>?
         </h1>
         <p className='mx-auto mt-3 text-center text-base text-gray-500'>
-          There are only 3 simple steps to remove Background from Image like a
+          There are only 4 simple steps to remove object from Image like a
           professional Editor.
         </p>
-        <ul className='mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-          {REMOVEBGHOWITWORKDETAILS.map((details) => (
-            <HowItWorkDetails key={details.id} {...details} />
+        <ul className='mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4'>
+          {REMOVEOBJHOWITWORKDETAILS.map((details) => (
+           <HowItWorkDetails key={details.id} {...details} />
           ))}
         </ul>
       </Container>

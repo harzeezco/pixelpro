@@ -37,7 +37,7 @@
 }
 
 .bg-pink-gradient {
-  @apply bg-gradient-to-r from-[#FFCB01] via-[#FF5993] to-[#FF5993] bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#FFCB01] via-[#FFCB01] to-[#FF5993] bg-clip-text text-transparent;
 }
 
 .bg-p-gradient {
