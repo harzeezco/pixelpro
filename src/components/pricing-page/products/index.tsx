@@ -29,12 +29,12 @@ const REMOVEBGHOWITWORKDETAILS = [
   },
 ];
 
-function OtherProducts() {
+function Products() {
   return (
     <section>
       <Container>
-        <h1 className='text-center text-4xl font-semibold lg:text-7xl'>
-          Try Our Other <span className='bg-p-gradient'>Products</span>?
+        <h1 className='text-center text-4xl font-semibold lg:text-7xl max-w-3xl mx-auto my-10'>
+          Power up with our AI product suite
         </h1>
         <ul className='mt-12 grid grid-cols-3 gap-7'>
           {REMOVEBGHOWITWORKDETAILS.map((details) => (
@@ -46,4 +46,4 @@ function OtherProducts() {
   );
 }
 
-export default OtherProducts;
+export default Products;

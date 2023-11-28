@@ -3,10 +3,10 @@ import CTA from '@/components/shared/c-t-a';
 import Features from '@/components/home-page/features';
 import Hero from '@/components/home-page/hero';
 import HowItWork from '@/components/home-page/how-it-work';
-import Testimonials from '@/components/home-page/testimonials';
 import FAQ from '@/components/shared/faq';
 import TrustedClients from '@/components/home-page/trusted-clients';
 import Blog from '@/components/shared/blog';
+import Testimonial from '@/components/home-page/testimonial';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <TrustedClients />
       <Features />
       <HowItWork />
-      <Testimonials />
+      <Testimonial />
       <Blog />
       <FAQ />
       <CTA img='snap.png' />

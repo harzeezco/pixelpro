@@ -16,7 +16,7 @@ function HowItWork() {
         </p>
         <ul className='mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4'>
           {REMOVEOBJHOWITWORKDETAILS.map((details) => (
-           <HowItWorkDetails key={details.id} {...details} />
+            <HowItWorkDetails key={details.id} {...details} />
           ))}
         </ul>
       </Container>

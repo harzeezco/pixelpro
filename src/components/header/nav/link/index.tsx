@@ -5,6 +5,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { NavDetailsProp } from '@/lib/types';
+import useLenisScroll from '@/hooks/useLenisScroll';
 import mergeClasses from '@/lib/utils';
 import Popup from './pop-up';
 
@@ -13,6 +14,7 @@ type LinkProp = {
 };
 
 function Links({ details }: LinkProp) {
+  useLenisScroll();
   const [isPopup, setIsPopup] = useState(false);
 
   const linkStyles =
@@ -23,7 +25,7 @@ function Links({ details }: LinkProp) {
       {details.isPopup ? (
         <div
           onClick={() => setIsPopup(!isPopup)}
-          onMouseEnter={() => setIsPopup(true)}
+          onMouseEnter={() => setIsPopup(!isPopup)}
           className={mergeClasses('group flex items-center', linkStyles)}
           tabIndex={-1}
           role='button'

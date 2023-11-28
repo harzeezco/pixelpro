@@ -86,3 +86,12 @@ export type FeatureDetailsProps = {
   img: string;
   bottomText: string;
 };
+
+export type TestimonialProps = {
+  title: string;
+  jobTitle: string;
+  description: string;
+  src: string;
+  color: string;
+  profileSrc: string;
+};

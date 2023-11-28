@@ -1,11 +1,17 @@
+import mergeClasses from '@/lib/utils';
 import React, { ReactNode } from 'react';
 
 type ButtonProp = {
   children: string | ReactNode;
   variant: string;
+  large?: boolean;
 };
 
-function Button({ children = null, variant = 'blue' }: ButtonProp) {
+function Button({
+  children = null,
+  variant = 'blue',
+  large = false,
+}: ButtonProp) {
   switch (variant) {
     case 'log-in':
       return (
@@ -29,7 +35,10 @@ function Button({ children = null, variant = 'blue' }: ButtonProp) {
       return (
         <button
           type='button'
-          className='flex w-auto items-center justify-center rounded-[25px] border-none bg-blue-700 px-[30px] py-3 font-semibold text-white transition-pop-up'
+          className={mergeClasses(
+            'btn-blue flex w-auto items-center justify-center rounded-[25px] border-none bg-blue-700 px-[30px] py-3 font-semibold text-white transition-pop-up',
+            large ? 'w-full' : '',
+          )}
         >
           {children}
         </button>

@@ -1,12 +1,12 @@
 import {
   BlogProps,
   CompaniesProp,
-  FeatureDataProps,
   FeatureDetailsProps,
   FooterNavLinksProp,
   HowItWorkProps,
   NavLinksProp,
   PopupDetailsProp,
+  TestimonialProps,
 } from './types';
 
 export const NAV_LINKS: NavLinksProp = [
@@ -388,5 +388,44 @@ export const REMOVEOBJHOWITWORKDETAILS: HowItWorkProps[] = [
     title: 'Download & share',
     label:
       "Download the lovely image you've edited after finishing your editing software, or post it directly to social media.",
+  },
+];
+
+export const TESTIMONIALS: TestimonialProps[] = [
+  {
+    title: 'Emily Turner',
+    jobTitle: 'Senior Graphic Designer',
+    description:
+      'As a professional designer, maintaining the integrity of the original image is paramount. PixelPro, Background and Object Remover excels in preserving fine details and nuances, ensuring that the edited images seamlessly integrate with the overall design. This attention to detail has not only saved me countless hours but has also elevated the quality of my work, garnering praise from clients and colleagues alike',
+    src: 'cloud.png',
+    color: 'CTA',
+    profileSrc: 'profile-1.jpg',
+  },
+  {
+    title: 'Vanessa Rodriguez',
+    jobTitle: 'Professional Photographer',
+    description:
+      "My experience with PixelPro has been nothing short of extraordinary. As a professional photographer specializing in portrait and product shots, I've always sought tools that can enhance the visual appeal of my images. PixelPro, the background and object remover, has become my go-to solution for achieving impeccable results. The precision and speed with which it operates have not only saved me valuable editing time but have also elevated the overall quality of my work. I highly recommend PixelPro to fellow photographers and creatives looking to take their editing game to the next level.",
+    src: 'iceberg.png',
+    color: 'CTA1',
+    profileSrc: 'profile-2.jpg',
+  },
+  {
+    title: 'Jason Patel',
+    jobTitle: 'Creative Director',
+    description:
+      "PixelPro has transformed the way I approach graphic design projects. In my role as a creative director, delivering visually stunning and cohesive designs is non-negotiable. PixelPro's background and object removal capabilities have streamlined my workflow and allowed for a level of precision that was previously time-consuming to achieve. The adaptability of PixelPro to various design needs, coupled with its exceptional customer support, makes it a must-have tool for any design professional. I'm genuinely impressed with PixelPro's performance and excited to continue incorporating it into my future projects.",
+    src: 'u-turn.png',
+    color: 'testimonial',
+    profileSrc: 'profile-3.jpg',
+  },
+  {
+    title: 'Olivia Lewis',
+    jobTitle: 'Content Creator',
+    description:
+      "PixelPro has been a lifesaver for my social media content creation. As a content creator in the beauty and lifestyle niche, having visually appealing and polished images is crucial. PixelPro's background and object removal features have allowed me to curate a stunning and cohesive aesthetic for my social media feeds. The versatility of the tool means that I can effortlessly adapt it to different types of content, maintaining a professional and engaging look across all my platforms. PixelPro has become an essential part of my content creation toolkit, and I wholeheartedly recommend it to fellow creators",
+    src: 'cloud.png',
+    color: 'CTA2',
+    profileSrc: 'profile-4.jpg',
   },
 ];

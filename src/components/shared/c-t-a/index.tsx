@@ -2,11 +2,11 @@ import Container from '@/components/shared/container';
 import Image from 'next/image';
 import React from 'react';
 
-function CTA({ img }: { img: string; }) {
+function CTA({ img }: { img: string }) {
   return (
     <section id='CTA'>
       <Container
-        className='CTA mb-20 rounded-[20px] p-16'
+        className='mb-20 rounded-[20px] bg-CTA p-16'
         aria-labelledby='CTA'
       >
         <div className='grid items-center justify-between gap-5 gap-y-8 md:grid-cols-2 lg:px-10'>

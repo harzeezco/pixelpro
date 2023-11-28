@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import Container from "@/components/shared/container";
-import RandomImages from "@/components/shared/random-images";
-import UploadImageBox from "@/components/shared/upload-img-box";
+import Image from 'next/image';
+import React from 'react';
+import Container from '@/components/shared/container';
+import RandomImages from '@/components/shared/random-images';
+import UploadImageBox from '@/components/shared/upload-img-box';
 
 function Hero() {
   return (

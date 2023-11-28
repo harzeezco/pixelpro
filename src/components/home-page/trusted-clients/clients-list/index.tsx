@@ -6,7 +6,7 @@ import './index.css';
 function ClientList() {
   return (
     <ul
-      className='items-center gap-6 lg:flex'
+      className='items-center gap-6 flex'
       title='Swipe to view more clients'
       id='slides'
     >
