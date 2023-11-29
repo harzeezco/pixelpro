@@ -17,7 +17,7 @@ function FeatureDetails({
   bottomText,
 }: { layoutType: 'reverse' | 'default' } & FeatureDetailsProps) {
   return (
-    <div className='grid grid-cols-2 justify-between items-center gap-y-10 md:flex-row md:gap-24'>
+    <div className='grid grid-cols-2 items-center justify-between gap-y-10 md:flex-row md:gap-24'>
       <article className='flex flex-col items-start gap-2'>
         <h1 className='text-[40px] font-semibold leading-10 lg:text-[54px] lg:leading-[60px]'>
           {gradientPosition === 'top' && (

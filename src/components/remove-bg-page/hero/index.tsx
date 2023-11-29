@@ -1,6 +1,7 @@
 import Container from '@/components/shared/container';
 import Image from 'next/image';
 import React from 'react';
+import ImageGallery from '@/components/image-swiper';
 import UploadImageBox from '../../shared/upload-img-box';
 import RandomImages from '../../shared/random-images';
 
@@ -16,13 +17,7 @@ function Hero() {
           <UploadImageBox />
           <RandomImages />
         </div>
-        <Image
-          src='/png/remove-bg/remove-bg.png'
-          alt=''
-          width={596}
-          height={439}
-          className='h-[500px] w-[596px]'
-        />
+        <ImageGallery />
       </Container>
     </section>
   );

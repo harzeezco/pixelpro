@@ -10,7 +10,7 @@ import Testimonial from '@/components/home-page/testimonial';
 
 export default function Home() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <TrustedClients />
       <Features />

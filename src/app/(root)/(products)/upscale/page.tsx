@@ -7,7 +7,7 @@ import React from 'react';
 
 function UpScale() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <Product />
       <Features />

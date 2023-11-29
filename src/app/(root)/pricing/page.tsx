@@ -5,7 +5,7 @@ import Products from '@/components/pricing-page/products';
 
 function PricingPage() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <Products />
       <FAQ />

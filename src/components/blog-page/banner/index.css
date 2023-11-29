@@ -1,0 +1,27 @@
+#banner {
+  background: linear-gradient(to right, #0095ff, #0058ff);
+}
+
+#banner::before {
+  content: '';
+  background-image: url('/png/blog/abstract-left.png');
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 170px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#banner::after {
+  content: '';
+  background-image: url('/png/blog/abstract-right.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 156px;
+  height: 180px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

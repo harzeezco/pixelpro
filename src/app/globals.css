@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 .btn-blue {
   background-size: 100% auto;
 }
@@ -72,21 +76,21 @@
   }
 }
 
-  .testimonial {
-    background: linear-gradient(#9f3bfa, #b12eff);
-  }
+.testimonial {
+  background: linear-gradient(#9f3bfa, #b12eff);
+}
 
-  .CTA {
-    background-image: linear-gradient(#ac50ff, #9f3bfa);
-  }
+.CTA {
+  background-image: linear-gradient(#ac50ff, #9f3bfa);
+}
 
-  .CTA1 {
-    background-image: linear-gradient(#9f3bfa, #b12eff);
-  }
+.CTA1 {
+  background-image: linear-gradient(#9f3bfa, #b12eff);
+}
 
-  .CTA2 {
-    background-image: linear-gradient(#722fff, #b12eff);
-  }
+.CTA2 {
+  background-image: linear-gradient(#722fff, #b12eff);
+}
 
 .slider:before {
   position: absolute;
@@ -122,4 +126,18 @@ input:checked + .slider:before {
   background-color: #0058ff;
   color: #fff;
   border-radius: 40px;
+}
+
+.drag::before {
+  content: '';
+  z-index: 10;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background-image: url('/png/group.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
 }

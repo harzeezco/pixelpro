@@ -6,7 +6,7 @@ import FAQ from '@/components/shared/faq';
 
 function Relight() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <Features />
       <OtherProducts />

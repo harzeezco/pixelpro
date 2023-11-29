@@ -7,7 +7,7 @@ import CTA from '@/components/shared/c-t-a';
 
 function RemoveObj() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <HowItWork />
       <Features />

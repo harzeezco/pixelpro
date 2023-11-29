@@ -8,7 +8,10 @@ import Logo from '../shared/Logo';
 function Header() {
   return (
     <header>
-      <Container className='flex h-[96px] items-center justify-between p-14 pb-0'>
+      <Container
+        className='flex h-[76px] items-center justify-between pt-14'
+        style={{ paddingBottom: '0px' }}
+      >
         <Logo width={132} height={32} />
 
         <nav className='hidden lg:flex'>

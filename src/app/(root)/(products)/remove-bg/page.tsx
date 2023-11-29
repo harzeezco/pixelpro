@@ -8,7 +8,7 @@ import FAQ from '@/components/shared/faq';
 
 function RemoveBg() {
   return (
-    <main>
+    <main className='mt-14'>
       <Hero />
       <HowItWork />
       <ProductsRemove />
