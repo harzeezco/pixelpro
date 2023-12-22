@@ -141,3 +141,13 @@ input:checked + .slider:before {
   background-size: cover;
   background-position: 0px;
 }
+
+.hero-image {
+  z-index: 10;
+  width: 1044px;
+  height: 630px;
+  background-image: url('/png/rec.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+}

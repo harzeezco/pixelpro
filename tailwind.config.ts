@@ -28,6 +28,7 @@ const config: Config = {
       borderColor: {
         'gray-100': '#ffffff33',
         'gray-300': '#454545',
+        'gray-400': '#5D5D5D',
       },
       maxWidth: {
         'container-width': '1110px',

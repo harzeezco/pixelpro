@@ -5,6 +5,7 @@ import Button from '@/components/shared/button';
 import FeaturesList from './features-list';
 import HeadLine from './hero-headline';
 import './index.css';
+import HeroImage from '@/components/ui/hero-image';
 
 function Hero() {
   return (
@@ -13,13 +14,9 @@ function Hero() {
         <HeadLine />
         <FeaturesList />
         <Button variant='blue'>Try For Free</Button>
-        <Image
-          src='/png/video.png'
-          alt=''
-          width={1044}
-          height={685}
-          className='mt-16'
-        />
+        <div className='mt-24'>
+          <HeroImage />
+        </div>
       </Container>
     </section>
   );
